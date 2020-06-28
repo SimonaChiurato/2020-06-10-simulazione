@@ -79,6 +79,7 @@ public class FXMLController {
 
     @FXML
     void doSimulazione(ActionEvent event) {
+    	this.txtResult.clear();
     	String input = this.txtGiorni.getText();
 		int giorni=0;
 		if (!input.matches("[0-9]+")) {

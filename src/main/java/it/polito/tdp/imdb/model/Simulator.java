@@ -33,9 +33,9 @@ public class Simulator {
 
 	public void run() {
 		while (N != 0) {
-			System.out.println("ciao");
+		
 			if (pausa == true) {
-				System.out.println("pausa");
+			
 				N--;
 				this.giorniPausa++;
 				pausa = false;
@@ -50,9 +50,10 @@ public class Simulator {
 					intervistati.add(a);
 					vertici.remove(a);
 					N--;
+					
 				} else {
 					Actor a = this.attoreMassimo(intervistati.get(intervistati.size() - 1));
-					if (a == null) {
+					if (a == null || intervistati.contains(a)) {
 						int p = r.nextInt(this.vertici.size());
 						a = vertici.get(p);
 					}
