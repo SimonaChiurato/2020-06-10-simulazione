@@ -1,6 +1,6 @@
 package it.polito.tdp.imdb.model;
 
-public class Actor{
+public class Actor {
 	Integer id;
 	String firstName;
 	String lastName;
